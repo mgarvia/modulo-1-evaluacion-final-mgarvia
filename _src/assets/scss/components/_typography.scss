@@ -2,14 +2,14 @@
 /* FUENTES */
 $fontFamilyTitle: 'Roboto Slab', ;
 $fontFamilyBody: 'Roboto', ;
-$fontSizeHeader: 16px;
-$fontSizeSmall: 14px;
-$fontSizeBody: 18px;
-$fontSizeHeaderTablet: 24px;
+// $fontSizeHeader: 16;
+// $fontSizeSmall: 14px;
+// $fontSizeBody: 18px;
+// $fontSizeHeaderTablet: 24px;
 
 /* COLORES */
-$colorFontTitleHeader: white;
-$colorFontTitleSection: black;
+$colorFontTitleHeader: #ffffff;
+$colorFontTitleSection: #000000;
 $colorFontBody: #4a4a4a;
 
 /** FUNCIÓN PARA EL CÁLCULO DE REMS **/
@@ -18,7 +18,7 @@ $defaultFontSize: 16;
     @return ( $pixels / $defaultFontSize * 1rem );
 }
 
-.main__title {
+.title__main {
     font-family: $fontFamilyTitle;
     font-size: rem(42);
     line-height: rem(55);
@@ -33,7 +33,7 @@ $defaultFontSize: 16;
         line-height: rem(132);
     }
 }
-.subtitle__header {
+.title__subtitle--header {
     font-family: $fontFamilyBody;
     font-size: rem(16);
     line-height: rem(30);
@@ -42,7 +42,16 @@ $defaultFontSize: 16;
         font-size: rem(24);
     }
 }
-.section-title {
+.title__small {
+    font-family: $fontFamilyBody;
+    color: #8ccbea;
+    font-size: rem(14);
+    padding: 5px 0;
+    @include forPc {
+        font-size: rem(16);
+    }
+}
+.title__section {
     font-family: $fontFamilyTitle;
     font-size: rem(24);
     line-height: rem(30);
@@ -57,7 +66,7 @@ $defaultFontSize: 16;
         line-height: rem(45);
     }
 }
-.reasons-title {
+.title__subtitle--section {
     font-family: $fontFamilyTitle;
     font-size: rem(18);
     line-height: rem(30);
@@ -68,12 +77,11 @@ $defaultFontSize: 16;
         line-height: rem(30);
     }
 }
-.body-font {
+.body__font {
     font-family: $fontFamilyBody;
     font-size: rem(18);
     line-height: rem(30);
     text-transform: capitalize;
-    color: $colorFontBody;
     @include forTablet {
         font-size: rem(20);
         line-height: rem(30);

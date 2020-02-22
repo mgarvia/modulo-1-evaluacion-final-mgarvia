@@ -6,11 +6,11 @@ $colorButtonSection: #f26002;
 .button__menu {
     width: 44px;
     height: 44px;
-    background-color: $colorButtonMenu;
+    background: $colorButtonMenu url(../images/ico-menu.svg) center no-repeat;
     display: flex;
     justify-content: center;
     a {
-        padding: 14px;
+        padding: 22px;
     }
 }
 .button__scroll {
@@ -25,20 +25,39 @@ $colorButtonSection: #f26002;
     a {
         padding: 23px;
     }
-    &.btn__header {
+    &--header {
         background: $colorButtonScroll url(../images/ico-scroll-down.svg) center no-repeat;
     }
-    &.btn__footer {
+    &--footer {
         background: $colorButtonScroll url(../images/ico-arrow.svg) center no-repeat;
+        top: -52px;
     }
 }
 .button {
     font-family: $fontFamilyBody;
     font-size: 20px;
-    font-weight: 500;
-}
-.button__font {
-    font-family: $fontFamilyBody;
-    font-size: rem(20);
-    line-height: rem(2.25);
+    line-height: 2.25px;
+    border-radius: 22.5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    :hover {
+        transform: scale(1.3);
+    }
+    a {
+        padding: 28px;
+    }
+    &__main {
+        width: 76px;
+        height: 45px;
+        border: 2px solid $colorButtonSection;
+        color: $colorButtonSection;
+    }
+    &__section {
+        width: 184px;
+        height: 45px;
+        background-color: $colorButtonSection;
+        color: $colorFontTitleHeader;
+    }
 }

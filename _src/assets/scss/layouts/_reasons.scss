@@ -35,5 +35,11 @@
                 transform: translateX(-50%);
             }
         }
+        @include forPc {
+            &.container{
+                max-width: none;
+                padding: 30px 85px;
+            }
+        }
     }
 }

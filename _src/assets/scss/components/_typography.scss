@@ -12,78 +12,76 @@ $colorFontTitleHeader: white;
 $colorFontTitleSection: black;
 $colorFontBody: #4a4a4a;
 
+/** FUNCIÓN PARA EL CÁLCULO DE REMS **/
+$defaultFontSize: 16;
+@function rem($pixels) {
+    @return ( $pixels / $defaultFontSize * 1rem );
+}
+
 .main__title {
     font-family: $fontFamilyTitle;
-    font-size: 42px;
-    line-height: 55px;
+    font-size: rem(42);
+    line-height: rem(55);
     text-transform: uppercase;
     color: $colorFontTitleHeader;
     @include forTablet {
-        font-size: 80px;
-        line-height: 106px;
+        font-size: rem(80);
+        line-height: rem(106);
     }
     @include forPc {
-        font-size: 100px;
-        line-height: 132px;
+        font-size: rem(100);
+        line-height: rem(132);
     }
 }
 .subtitle__header {
     font-family: $fontFamilyBody;
-    font-size: 16px;
-    line-height: 30px;
+    font-size: rem(16);
+    line-height: rem(30);
     color: $colorFontTitleHeader;
     @include forTablet {
-        font-size: 24px;
+        font-size: rem(24);
     }
 }
 .section-title {
     font-family: $fontFamilyTitle;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: rem(24);
+    line-height: rem(30);
     text-transform: capitalize;
     color: $colorFontTitleSection;
     @include forTablet {
-        font-size: 26px;
-        line-height: 45px;
+        font-size: rem(26);
+        line-height: rem(45);
     }
     @include forPc {
-        font-size: 32px;
-        line-height: 45px;
+        font-size: rem(32);
+        line-height: rem(45);
     }
 }
 .reasons-title {
     font-family: $fontFamilyTitle;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: rem(18);
+    line-height: rem(30);
     text-transform: capitalize;
     color: $colorFontTitleSection;
     @include forTablet {
-        font-size: 24px;
-        line-height: 30px;
-        margin: 14px;
+        font-size: rem(24);
+        line-height: rem(30);
     }
 }
 .body-font {
     font-family: $fontFamilyBody;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: rem(18);
+    line-height: rem(30);
     text-transform: capitalize;
     color: $colorFontBody;
     @include forTablet {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: rem(20);
+        line-height: rem(30);
     }
-}
-.button__font {
-    font-family: $fontFamilyBody;
-    font-size: 20px;
-    line-height: 2.25px;
 }
 .footer__font {
     font-family: $fontFamilyBody;
-    font-size: 16px;
-    line-height: 30px;
+    font-size: rem(16);
+    line-height: rem(30);
 }
-body * {
-    margin: 0;
-}
+

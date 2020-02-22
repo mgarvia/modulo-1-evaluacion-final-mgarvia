@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 .container {
     max-width: 290px;
     margin: auto;
@@ -8,21 +11,5 @@
         max-width: 730px;
     }
 }
-.page__reassons--container + .container {
-    max-width: auto !important;
-}
-.button {
-    font-family: $fontFamilyBody;
-    font-size: 20px;
-    font-weight: 500;
-}
-.button__scroll {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: $colorButtonScroll;
-    text-align: center;
-    padding: 15px 0;
-    display: inline-block;
-}
+
 

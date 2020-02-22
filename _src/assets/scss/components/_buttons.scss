@@ -1,0 +1,44 @@
+/*** VARIABLES ***/
+$colorButtonMenu: #0271bc;
+$colorButtonScroll: #ffffff;
+$colorButtonSection: #f26002;
+
+.button__menu {
+    width: 44px;
+    height: 44px;
+    background-color: $colorButtonMenu;
+    display: flex;
+    justify-content: center;
+    a {
+        padding: 14px;
+    }
+}
+.button__scroll {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    a {
+        padding: 23px;
+    }
+    &.btn__header {
+        background: $colorButtonScroll url(../images/ico-scroll-down.svg) center no-repeat;
+    }
+    &.btn__footer {
+        background: $colorButtonScroll url(../images/ico-arrow.svg) center no-repeat;
+    }
+}
+.button {
+    font-family: $fontFamilyBody;
+    font-size: 20px;
+    font-weight: 500;
+}
+.button__font {
+    font-family: $fontFamilyBody;
+    font-size: rem(20);
+    line-height: rem(2.25);
+}

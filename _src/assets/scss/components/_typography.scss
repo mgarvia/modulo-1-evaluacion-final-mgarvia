@@ -1,11 +1,7 @@
-/*** VARIABLES ***/
+/*** VARIABLES TIPOGRAFÍA ***/
 /* FUENTES */
 $fontFamilyTitle: 'Roboto Slab', ;
 $fontFamilyBody: 'Roboto', ;
-// $fontSizeHeader: 16;
-// $fontSizeSmall: 14px;
-// $fontSizeBody: 18px;
-// $fontSizeHeaderTablet: 24px;
 
 /* COLORES */
 $colorFontTitleHeader: #ffffff;
@@ -16,6 +12,10 @@ $colorFontBody: #4a4a4a;
 $defaultFontSize: 16;
 @function rem($pixels) {
     @return ( $pixels / $defaultFontSize * 1rem );
+}
+
+body {
+    line-height: rem(30);
 }
 
 .title__main {
@@ -36,7 +36,6 @@ $defaultFontSize: 16;
 .title__subtitle--header {
     font-family: $fontFamilyBody;
     font-size: rem(16);
-    line-height: rem(30);
     color: $colorFontTitleHeader;
     @include forTablet {
         font-size: rem(24);
@@ -54,7 +53,6 @@ $defaultFontSize: 16;
 .title__section {
     font-family: $fontFamilyTitle;
     font-size: rem(24);
-    line-height: rem(30);
     text-transform: capitalize;
     color: $colorFontTitleSection;
     @include forTablet {
@@ -63,33 +61,31 @@ $defaultFontSize: 16;
     }
     @include forPc {
         font-size: rem(32);
-        line-height: rem(45);
     }
 }
 .title__subtitle--section {
     font-family: $fontFamilyTitle;
     font-size: rem(18);
-    line-height: rem(30);
     text-transform: capitalize;
     color: $colorFontTitleSection;
     @include forTablet {
         font-size: rem(24);
-        line-height: rem(30);
     }
 }
 .body__font {
     font-family: $fontFamilyBody;
     font-size: rem(18);
-    line-height: rem(30);
     text-transform: capitalize;
     @include forTablet {
         font-size: rem(20);
-        line-height: rem(30);
     }
 }
 .footer__font {
     font-family: $fontFamilyBody;
     font-size: rem(16);
-    line-height: rem(30);
+    &--copy {
+        font-family: $fontFamilyBody;
+        font-size: rem(14);
+        text-transform: lowercase;
+    }
 }
-

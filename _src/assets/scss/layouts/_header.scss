@@ -1,3 +1,4 @@
+/* ESTILOS HEADER */
 .page__header {
     height: 100vh;
     background-color: $colorPrimary;
@@ -10,13 +11,12 @@
         z-index: 1;
     }
     .header__container {
-        height: 100vh;
         display: flex;
         justify-content: center;
         text-align: center;
         .header__content {
             position: absolute;
-            top: 60%;
+            bottom: 5%;
             p {
                 padding: 10px 0 45px 0;
                 @include forTablet {

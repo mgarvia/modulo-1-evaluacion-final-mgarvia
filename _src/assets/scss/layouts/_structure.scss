@@ -9,9 +9,9 @@ html {
     }
     @include forPc {
         max-width: 730px;
-    }
-    &.container__section--reasons {
-        max-width:none;
+        &.container__section--reasons {
+            max-width:none;
+        }
     }
 }
 .container__section {
@@ -20,8 +20,3 @@ html {
         padding: 60px 0;
     }
 }
-:hover {
-    transition: all 0.5s ease-in-out;
-}
-
-

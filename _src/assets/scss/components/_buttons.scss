@@ -1,4 +1,4 @@
-/*** VARIABLES ***/
+/*** VARIABLES BOTONES ***/
 $colorButtonMenu: #0271bc;
 $colorButtonScroll: #ffffff;
 $colorButtonSection: #f26002;
@@ -22,17 +22,38 @@ $colorButtonSection: #f26002;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    &:hover {
+        transition: background 0.25s ease;
+    }
     a {
         padding: 23px;
     }
     &--header {
         background: $colorButtonScroll url(../images/ico-scroll-down.svg) center no-repeat;
+        &:hover {
+            background: $colorButtonScroll url(../images/ico-scroll-down.svg) bottom no-repeat;
+        }
     }
     &--footer {
         background: $colorButtonScroll url(../images/ico-arrow.svg) center no-repeat;
-        top: -52px;
+        &:hover {
+        background: $colorButtonScroll url(../images/ico-arrow.svg) top no-repeat;  
+        }
     }
+    animation: fade-in 5s;
+    animation-iteration-count: 1
 }
+
+//** ANIMACIÓN BOTONES SCROLL **//
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
 .button {
     font-family: $fontFamilyBody;
     font-size: 20px;
@@ -42,8 +63,8 @@ $colorButtonSection: #f26002;
     display: flex;
     justify-content: center;
     align-items: center;
-    :hover {
-        transform: scale(1.3);
+    &:hover {
+        transition: color, background-color 0.25s ease;
     }
     a {
         padding: 28px;
@@ -53,11 +74,32 @@ $colorButtonSection: #f26002;
         height: 45px;
         border: 2px solid $colorButtonSection;
         color: $colorButtonSection;
+        &:hover {
+            background-color: $colorButtonSection;
+            color: $colorFontTitleHeader;
+        }
+        @include forTablet {
+            width: 91px;
+        }
+        @include forPc {
+            width: 160px;
+        }
     }
     &__section {
         width: 184px;
         height: 45px;
         background-color: $colorButtonSection;
         color: $colorFontTitleHeader;
+        &:hover{
+            border: 2px solid $colorButtonSection;
+            background-color: transparent;
+            color: $colorButtonSection;
+        }
+        @include forTablet {
+            width: 210px;
+        }
+        @include forPc {
+            width: 255px;
+        }
     }
 }

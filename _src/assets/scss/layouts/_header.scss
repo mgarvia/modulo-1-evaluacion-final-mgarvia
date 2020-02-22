@@ -1,0 +1,26 @@
+.page__header {
+    background-color: $colorPrimary;
+    width: 100vw;
+    background: url(../images/cover.jpg) center no-repeat;
+    background-size: cover;;
+    .button__menu {
+        width: 44px;
+        height: 44px;
+        background-color: $colorButtonMenu;
+        padding: 14px;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        z-index: 1;
+    }
+    .header__container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        .header__content {
+            position: absolute;
+            top: 50%;
+        }
+    }
+}

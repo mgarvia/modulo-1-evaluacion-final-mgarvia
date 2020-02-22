@@ -1,0 +1,21 @@
+.page__main {
+    padding: 30px 0;
+    .title__small {
+        font-family: $fontFamilyBody;
+        color: #8ccbea;
+        font-size: $fontSizeSmall;
+        padding: 5px 0;
+        @include forPc {
+            font-size: $fontSizeHeader;
+        }
+    }
+    .button--main {
+        width: 76px;
+        height: 45px;
+        border: 2px solid $colorButtonSection;
+        border-radius: 22.5px;
+        text-align: center;
+        padding: 20px;
+        color: $colorButtonSection;
+    }
+}

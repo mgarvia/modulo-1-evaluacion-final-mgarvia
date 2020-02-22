@@ -1,0 +1,50 @@
+.page__footer {
+    background-color: #304268;
+    position: relative;
+    color: white;
+    font-family: $fontFamilyBody;
+    font-size: $fontSizeHeader;
+    padding: 60px 0 45px 0;
+    text-align: center;
+    .button-scroll-down-container {
+        position: absolute;
+        top: -22.5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .footer-section-container {
+        .footer-section {
+            margin: auto;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            line-height: 30px;
+            order: 2;
+        }
+        @include forTablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            text-align: left;
+            .footer-copy {
+                order: 1;
+            }
+            .footer-section {
+                margin: 0;
+            }
+        }
+        @include forPc {
+            justify-content: center;
+            .footer-section {
+                margin: 0 30px;
+            }
+        }
+    }
+    p {
+        text-transform: lowercase;
+        img {
+            display: inline-block;
+            height: 11px;
+            padding-right: 3px;
+        }
+    }
+}

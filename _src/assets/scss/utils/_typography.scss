@@ -1,0 +1,89 @@
+/*** VARIABLES ***/
+/* FUENTES */
+$fontFamilyTitle: 'Roboto Slab', ;
+$fontFamilyBody: 'Roboto', ;
+$fontSizeHeader: 16px;
+$fontSizeSmall: 14px;
+$fontSizeBody: 18px;
+$fontSizeHeaderTablet: 24px;
+
+/* COLORES */
+$colorFontTitleHeader: white;
+$colorFontTitleSection: black;
+$colorFontBody: #4a4a4a;
+
+.main__title {
+    font-family: $fontFamilyTitle;
+    font-size: 42px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: $colorFontTitleHeader;
+    @include forTablet {
+        font-size: 80px;
+        line-height: 106px;
+    }
+    @include forPc {
+        font-size: 100px;
+        line-height: 132px;
+    }
+}
+.subtitle__header {
+    font-family: $fontFamilyBody;
+    font-size: 16px;
+    line-height: 30px;
+    color: $colorFontTitleHeader;
+    @include forTablet {
+        font-size: 24px;
+    }
+}
+.section-title {
+    font-family: $fontFamilyTitle;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: $colorFontTitleSection;
+    @include forTablet {
+        font-size: 26px;
+        line-height: 45px;
+    }
+    @include forPc {
+        font-size: 32px;
+        line-height: 45px;
+    }
+}
+.reasons-title {
+    font-family: $fontFamilyTitle;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: $colorFontTitleSection;
+    @include forTablet {
+        font-size: 24px;
+        line-height: 30px;
+        margin: 14px;
+    }
+}
+.body-font {
+    font-family: $fontFamilyBody;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: $colorFontBody;
+    @include forTablet {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+.button__font {
+    font-family: $fontFamilyBody;
+    font-size: 20px;
+    line-height: 2.25px;
+}
+.footer__font {
+    font-family: $fontFamilyBody;
+    font-size: 16px;
+    line-height: 30px;
+}
+body * {
+    margin: 0;
+}

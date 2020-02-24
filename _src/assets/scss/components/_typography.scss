@@ -83,8 +83,8 @@ body {
 .footer__font {
     font-family: $fontFamilyBody;
     font-size: rem(16);
+    color: white;
     &--copy {
-        font-family: $fontFamilyBody;
         font-size: rem(14);
         text-transform: lowercase;
     }

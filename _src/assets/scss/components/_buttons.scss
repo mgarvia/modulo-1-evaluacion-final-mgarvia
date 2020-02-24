@@ -23,7 +23,7 @@ $colorButtonSection: #f26002;
     left: 50%;
     transform: translateX(-50%);
     &:hover {
-        transition: background 0.25s ease;
+        transition: background 0.35s ease;
     }
     a {
         padding: 23px;
@@ -31,13 +31,13 @@ $colorButtonSection: #f26002;
     &--header {
         background: $colorButtonScroll url(../images/ico-scroll-down.svg) center no-repeat;
         &:hover {
-            background: $colorButtonScroll url(../images/ico-scroll-down.svg) bottom no-repeat;
+            background-position: bottom;
         }
     }
     &--footer {
         background: $colorButtonScroll url(../images/ico-arrow.svg) center no-repeat;
         &:hover {
-        background: $colorButtonScroll url(../images/ico-arrow.svg) top no-repeat;  
+            background-position: top;
         }
     }
     animation: fade-in 5s;
@@ -52,7 +52,7 @@ $colorButtonSection: #f26002;
     to {
       opacity: 1;
     }
-  }
+}
 
 .button {
     font-family: $fontFamilyBody;

@@ -1,13 +1,12 @@
 /* ESTILOS FOOTER */
 .page__footer {
     background-color: $colorPrimary;
-    color: white;
     padding: 60px 0 45px 0;
     text-align: center;
     position: relative;
     .button__scroll--footer {
-    position: absolute;
-    top: -23px;
+        position: absolute;
+        top: -23px;
     }
     .footer__section--container {
         .footer__section {
@@ -25,14 +24,13 @@
             align-items: flex-start;
             text-align: left;
             .footer__section {
-            margin: 0;
-            order: 2;
+                margin: 0;
+                order: 2;
             }
         }
         @include forPc {
             justify-content: center;
             .footer__section, .footer__copy {
-                display: block;
                 margin: 0 30px;
                 padding-right: 50px;
             }
